@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := davinci
+PRODUCT_RELEASE_NAME := jd20
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,20 +23,12 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := davinci
-PRODUCT_NAME := omni_davinci
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Mi 9T
-PRODUCT_MANUFACTURER := Xiaomi
-
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.product.device \
-    ro.product.name \
-    ro.build.product \
-    ro.bootimage.build.date.utc \
-    ro.build.date.utc
+PRODUCT_DEVICE := jd20
+PRODUCT_NAME := omni_jd20
+PRODUCT_BRAND := Lenovo
+PRODUCT_MODEL := Lenovo L78121
+PRODUCT_MANUFACTURER := Lenovo
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2099-12-31
-

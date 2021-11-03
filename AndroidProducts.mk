@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_davinci.mk
+    $(LOCAL_DIR)/omni_jd20.mk
